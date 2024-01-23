@@ -3,7 +3,7 @@ import {useEffect,useState,lazy, Suspense} from 'react'
 import ProductsJson from './data/Products.js'
 import IconClose from '../public/assets/icons/IconClose.jsx'
 import styles from './components/styles/CardProducts.module.css'
-const Products = lazy(()=> import('./components/Products.js'))
+const Products = lazy(()=> import('./components/Products.jsx'))
 const Profile = lazy(()=> import('./components/Profile.jsx'))
 const Garments = lazy(()=> import('./components/Garments.jsx'))
 const ShoppingCart = lazy(()=> import('./components/ShoppingCart.jsx'))
