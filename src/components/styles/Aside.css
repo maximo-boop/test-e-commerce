@@ -1,0 +1,17 @@
+.icons li {
+	padding: 8px;
+	transition: background .3s,border-radius .3s;
+}
+
+.icons li svg {
+	transition: color .3s;
+}
+
+.itemSelected {
+	background: #000;
+	border-radius: 10px;
+}
+
+.itemSelected svg {
+	color: var(--primary);
+}

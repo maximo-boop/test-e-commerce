@@ -1,0 +1,75 @@
+main {
+	position: relative;
+	height: 100vh;
+	background-color: #eee;
+	background-image: url('../../public/assets/images/e-commerce-moda.webp');
+	background-repeat: no-repeat;
+	background-position: center 40%;
+	background-size: cover;
+}
+
+main::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0,0.5);
+}
+
+.button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	transition: border .2s, padding .2s;
+	padding: 14px 30px;
+}
+
+.button:hover {
+	border: 2px solid transparent;
+	padding: 14px 40px;
+}
+
+.button:hover svg {
+	opacity: 1;
+}
+
+.button svg {
+	transition: opacity .2s;
+	opacity: 0;
+	position: absolute;
+	right: 10px;
+
+}
+
+.lastChild svg,
+.secondChild svg,
+.firstChild svg {
+  opacity: 0;
+  animation: redes .5s forwards;
+}
+
+.lastChild svg:hover,
+.secondChild svg:hover,
+.firstChild svg:hover {
+	color: #e0e0e0;
+}
+
+.secondChild svg {
+  animation-delay: .1s;
+}
+
+.lastChild svg {
+  animation-delay: .2s;
+}
+
+
+@keyframes redes {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

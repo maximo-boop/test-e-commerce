@@ -1,0 +1,22 @@
+.li {
+	height: 300px;
+	border-radius: 17px;
+}
+
+.li img {
+	margin: auto;
+	max-height: 150px;
+}
+
+.textModal {
+	animation: textModal .5s forwards ease;
+}
+
+@keyframes textModal {
+	from {
+		transform: translateY(5px);
+	}
+	to {
+		transform: translateY(0);
+	}
+}

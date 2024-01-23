@@ -1,0 +1,50 @@
+.gridProducts {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.gridProducts div {
+	position: relative;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gridProducts div:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(0,0,0,0.2);
+}
+
+.gridProducts div:hover:before {
+	background: rgb(0,0,0,0.4);
+}
+
+.gridProducts div h3 {
+	z-index: 0;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+	.gridProducts {
+		grid-template-columns: repeat(2, minmax(300px, 1fr));		
+	}
+
+	.gridProducts div {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.gridProducts {
+		padding: 50px 0;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	}
+}

@@ -1,0 +1,42 @@
+.button {
+  width: 100%;
+  text-align: start;
+  padding: 8px 15px;
+}
+.caps {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	padding: 60px 30px 100px 30px;
+}
+
+.div {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	position: relative;
+}
+
+.button:hover {
+  background: #f3fafa;
+}
+
+.ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,300px));
+	width: 100%;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.caps {
+		margin-left: 60px;
+		padding: 60px 60px 100px 60px;
+	}
+
+}
