@@ -20,7 +20,7 @@ const Hero = ({enterMessage,setCartItems}) => {
                         <h2 className='text-xl lg:text-2xl'>Your Style, Our Passion!</h2>
                     </div>
 
-                    <div className="flex gap-5 font-bold text-sm lg:text-md">
+                    <div className="flex gap-5 font-bold text-sm lg:text-base">
         	            <Link to='/products' className={`text-white border-2 ${styles.button}`} aria-label="Explore our collection">EXPLORE OUR COLLECTION<IconRight /></Link>
                     </div>
 
